@@ -1,0 +1,10 @@
+:root{
+    /*----------------color--------------------------------*/
+    --hue-color:240;
+    --first-color:hsl(var(--hue-color),69%,61%);
+
+}
+.img-logo{
+    
+    background: var(--first-color);
+}
