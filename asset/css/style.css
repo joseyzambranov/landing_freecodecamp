@@ -1,10 +1,93 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*---------------------------VARIBLE CSS-----------------------------*/
 :root{
+
     /*----------------color--------------------------------*/
     --hue-color:240;
     --first-color:hsl(var(--hue-color),69%,61%);
+    --first-color-alt:hsl(var(--hue-color),57%,53%);
+    --title-color:hsl(var(--hue-color),8%,15%);
+    --body-color:hsl(var(--hue-color),60%,99%);
+    /*----------------------font size--------------------------*/
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size:.938rem ;
+    --small-font-size:.813rem
+    /*--------------------FONT WEIGHT-----------------------------*/
+    --font-medium:500;
+    --font-semi-bold:600;
 
 }
+
+/*------------------BASE----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+}
+h1{
+    font-size: var(--big-font-size);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*-------------------REUSABLE CSS CLASSES-----------------*/
+
+.section{
+    padding: 2rem 0 4rem;
+}
+.section__title{
+    font-size: var(--h1-font-size);
+}
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: 3rem;
+}
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+/*---------------------LAYOUT-------------------------------*/
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+}
+
+/*-----------------------styles freecodecamp-------------------------------*/
+
 .img-logo{
-    
     background: var(--first-color);
 }
+.page-wrapper{
+    position: relative;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
