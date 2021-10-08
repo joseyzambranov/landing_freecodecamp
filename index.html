@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,110 +8,132 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>SkaterSchool</title>
 </head>
+
 <body>
-    <div class="page-wrapper">
+
     <!-----------------------------------HEADER----------------------------------------------->
     <header class="l-header" id="header">
-        <nav class="">
-            <img class="img-logo" src="./asset/img/logo.svg" alt="">
-            <div>
-                <ul>
-                    <li>Features</li>
-                    <li>How It Works</li>
-                    <li>Pricing</li>
+        <nav class="nav  bd-grid" id="nav-bar">
+            <img class="nav__logo" src="./asset/img/logo.svg" alt="" id="header-img">
+            <div class="nav__menu" id="nav-menu" >
+                <ul class="nav__list">
+                    <li class="nav__item "><a href="#feature" class="nav__link active nav-link">Features</a></li>
+                    <li class="nav__item "><a href="#work" class="nav__link nav-link">How It Works</a></li>
+                    <li class="nav__item "><a href="#price" class="nav__link nav-link">Pricing</a></li>
                 </ul>
             </div>
-                <div>
-                    <i class="uil uil-apps"></i>
-                </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
         </nav>
     </header>
-
-    
-    <section>
-        <h1>Skateboarding Master Classes for all ages</h1>
-        <form action="https://www.reecodecamp.com/email-submit)." id="form">
-            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-            <input type="submit" value="Get started" id="submit">
-        </form>
-    </section>
-    <section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gN0GDRWvRig?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <div>
-        <section>
-            <div>
-                <div><i class="uil uil-graduation-cap"></i></div>
-            </div>
-            <div >
-                <h2>Premium classes</h2>
-                <p>Our Teachers use the best teaching techniques added to their experience as professionals. 
-                    This will increase the ability to learn much faster.</p>
-            </div>
-            <div>
-                <div><i class="uil uil-headphones"></i></div>
-            </div>
-            <div>
-                <h2>Remote Classes</h2>
-                <p>We make sure you learn in the comfort of your home. We also offer precendent classes.</p>
-            </div>
-            <div>
-                <div><i class="uil uil-award"></i></div>
-            </div>
-            <div>
-                <h2>Quality assurance</h2>
-                <p>For each class you take, we will make sure that you can apply what you have learned and
-                     we will give you a certificate endorsed by the law. In case of being dissatisfied, we will refund your money.</p>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <div>tenor</div>
-                <h2>$600</h2>
-                <ol>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button>Select</button>
-            </div>
-            <div>
-                <div>tenor</div>
-                <h2>$600</h2>
-                <ol>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button>Select</button>
-            </div>
-            <div>
-                <div>tenor</div>
-                <h2>$600</h2>
-                <ol>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button>Select</button>
-            </div>
-        </section>
-        <footer>
-            <ul>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Contact</li>
-            </ul>
-            <span>&#169 José Zambrano. All rights reserved</span>
-        </footer>
+    <div class="section title" id="feature">
+        <h1>Skateboarding Classes</h1>
+        <p class="section__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
     </div>
-</div>
-    
+
+    <section class="section service__container bd-grid" >
+
+        <div class="service__content">
+            <i class="uil uil-graduation-cap"></i>
+            <h2 class="section__title">Premium classes</h2>
+            <p class="section__subtitle">Our Teachers use the best teaching techniques added to their experience as
+                professionals.
+                This will increase the ability to learn much faster.</p>
+        </div>
+
+        <div class="service__content">
+            <i class="uil uil-headphones"></i>
+            <h2 class="section__title">Remote Classes</h2>
+            <p class="section__subtitle">We make sure you learn in the comfort of your home. We also offer
+                precendent classes.</p>
+        </div>
+
+        <div class="service__content">
+            <i class="uil uil-award"></i>
+            <h2 class="section__title">Quality assurance</h2>
+            <p class="section__subtitle">For each class you take, we will make sure that you can apply what you have
+                learned and
+                we will give you a certificate endorsed by the law. In case of being dissatisfied, we will refund
+                your money.</p>
+        </div>
+    </section>
+
+    <div class="">
+        <section class="newsletter section" id="work">
+            <div class="newsletter__container bd-grid">
+                <div class="newsletter__title">
+                    <h2>Subscribe for more information</h2>
+                </div>
+                <form action="https://www.reecodecamp.com/email-submit)." class="newsletter__subscribe" id="form">
+                    <input type="email" name="email" id="email" placeholder="@Email" class="newsletter__input" required>
+                    <input type="submit" class="buttom" value="Subscribe" id="submit">
+                </form>
+
+            </div>
+
+        </section>
+        <section class="video__content" >
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gN0GDRWvRig?controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="section card__container bd-grid" id="price">
+            <div class="card__content">
+                <h2 class="section__title">Basic</h2>
+                <h3 class="uil">$600</h3>
+                <ol class="section__subtitle">
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="buttom">Select</button>
+            </div>
+            <div class="card__content">
+                <h2 class="section__title">Medium</h2>
+                <h3 class="uil">$700</h3>
+                <ol class="section__subtitle">
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="buttom">Select</button>
+            </div>
+            <div class="card__content">
+                <h2 class="section__title">Pro</h2>
+                <h3 class="uil">$900</h3>
+                <ol class="section__subtitle">
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="buttom">Select</button>
+            </div>
+        </section>
+        <footer class="footer" >
+                    <ul class="footer__box">
+                        <li class="footer__link"><a href="#">Privacy</a></li>
+                        <li class="footer__link"><a href="#">Terms</a></li>
+                        <li class="footer__link"><a href="#">Contact</a></li>
+                    </ul>
+                   
+
+                    <span class="footer__copy">&#169 José Zambrano. All rights reserved</span>
+
+           
+            
+        </footer>
+
+    </div>
+
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="./asset/js/main.js"></script>
+
 </html>
